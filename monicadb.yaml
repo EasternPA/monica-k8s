@@ -1,0 +1,10 @@
+apiVersion: v1
+data:
+  MYSQL_DATABASE: monica
+  MYSQL_PASSWORD: secret
+  MYSQL_RANDOM_ROOT_PASSWORD: "true"
+  MYSQL_USER: monica
+kind: ConfigMap
+metadata:
+  name: monicadb
+  namespace: monicahq
