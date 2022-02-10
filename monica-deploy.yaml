@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: monica
+  name: monica
+  namespace: monicahq
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: monica
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: monica
+    spec:
+      containers:
+      - envFrom:
+        - configMapRef:
+            name: monicaenv
+        image: monica
+        imagePullPolicy: Always
+        name: monica
+        ports:
+        - containerPort: 80
+          protocol: TCP
+      restartPolicy: Always
