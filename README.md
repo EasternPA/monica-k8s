@@ -13,4 +13,4 @@ Also note that on my old laptop (Thinkpad T420, 16GB RAM), it takes 7 full minut
 
 Copyright © 2022
 
-Licensed under the AGPL
+Licensed under [the AGPL License](/LICENSE.md).
