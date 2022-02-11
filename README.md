@@ -11,6 +11,6 @@ https://hub.docker.com/_/monica
 
 Also note that on my old laptop (Thinkpad T420, 16GB RAM), it takes 7 full minutes after deployment with ArgoCD before the login screen appears
 
-Copyright 2022
+Copyright © 2022
 
 Licensed under the AGPL
